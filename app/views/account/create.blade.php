@@ -1,9 +1,5 @@
 @extends('layout.main')
 
-{{HTML::style('../css/foundation.css')}}
-{{HTML::style('../css/style.css')}}
-
-
 @section('title')
 
 Create an account
@@ -17,7 +13,7 @@ Create an account
 	<div class="main">
 	
 	<div class="field">
-		Email : <input type="text" name="email" class="input-block-level" {{ (Input::old('email')) ? 'value ="'.e(Input::Old('email')).'"':'' }} >
+		<label>Email : </label><input type="text" name="email" {{ (Input::old('email')) ? 'value ="'.e(Input::Old('email')).'"':'' }} >
 		@if($errors->has('email'))
 			{{$errors->first('email')}}
 		@endif
@@ -25,7 +21,7 @@ Create an account
 	</div>
 
 	<div class="field">
-		Username : <input type="text" name="username" class="input-block-level" {{ (Input::old('username')) ? 'value="'.e(Input::old('username')).'"':'' }} >
+		<label>Username : </label><input type="text" name="username" {{ (Input::old('username')) ? 'value="'.e(Input::old('username')).'"':'' }} >
 		@if($errors->has('username'))
 			{{$errors->first('username')}}
 		@endif
@@ -34,7 +30,7 @@ Create an account
 	</div>
 
 	<div class="field">
-		Password : <input type="password" name="password" class="input-block-level">
+		<label>Password : </label><input type="password" name="password">
 		@if($errors->has('password'))
 			{{$errors->first('password')}}
 		@endif
@@ -43,7 +39,7 @@ Create an account
 	</div>
 
 	<div class="field">
-		Confirm Password : <input type="password" name="confirmpassword" class="input-block-level">
+		<label>Confirm Password : </label><input type="password" name="confirmpassword">
 		@if($errors->has('confirmpassword'))
 			{{$errors->first('confirmpassword')}}
 		@endif
