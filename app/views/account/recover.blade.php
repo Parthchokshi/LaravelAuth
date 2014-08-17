@@ -10,6 +10,8 @@ Recover Password
 
 <div class="field">
 
+	<label for="password">New Password</label>
+
 	<input type="password" name="password" placeholder="New Password">
 	
 	@if($errors->has('password'))
@@ -22,6 +24,8 @@ Recover Password
 
 <div class="field">
 
+	<label for="password_confirm">Confirm Password</label>
+
 	<input type="password" name="password_confirm" placeholder="Confirm Password">
 
 	@if($errors->has('password_confirm'))
@@ -32,7 +36,7 @@ Recover Password
 
 </div>
 
-<button type="submit" class="btn btn-primary">Change Password.</button>
+<button type="submit" class="button">Change Password.</button>
 
 {{Form::token()}}
 
