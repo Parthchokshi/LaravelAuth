@@ -22,6 +22,8 @@ Change Password
 
 <div class="field">
 
+<label for="password">New Password</label>
+
 <input type="password" name="password" placeholder="New Password">
 
 @if($errors->has('password'))
@@ -31,6 +33,8 @@ Change Password
 </div>
 
 <div class="field">
+
+<label for="passwordconfirm">Confirm Password</label>
 
 <input type="password" name="passwordconfirm" placeholder="Confirm Password">
 
@@ -43,7 +47,7 @@ Change Password
 
 {{ Form::token()}}
 
-<button type="submit" class="button expand">Change Password</button>
+<button type="submit" class="button">Change Password</button>
 
 </form>
 
