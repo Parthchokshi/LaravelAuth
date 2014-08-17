@@ -1,5 +1,8 @@
 @extends('layout.main')
 
+{{HTML::style('../css/foundation.css')}}
+{{HTML::style('../css/style.css')}}
+
 @section('title')
 Change Password
 @stop
@@ -11,6 +14,7 @@ Change Password
 
 <div class="field">
 
+<label for="oldpassword">Old Password</label>
 <input type="password" name="oldpassword" placeholder="Old Password">
 
 @if($errors->has('oldpassword'))
@@ -42,7 +46,7 @@ Change Password
 
 {{ Form::token()}}
 
-<button type="submit" class="btn btn-primary">Change Password</button>
+<button type="submit" class="button expand">Change Password</button>
 
 </form>
 
