@@ -1,5 +1,8 @@
 @extends('layout.main')
 
+{{HTML::style('../css/foundation.css')}}
+{{HTML::style('../css/style.css')}}
+
 @section('title')
 Forgot Password
 @stop
@@ -10,7 +13,8 @@ Forgot Password
 	
 <div class="field">	
 
-<input type="text" name="email" placeholder="Email" {{ (Input::old('email'))  ? 'value="'.e(Input::old('email')).'"': '' }} >
+<label for="email">Email</label>
+<input type="text" name="email" class="" placeholder="Email" {{ (Input::old('email'))  ? 'value="'.e(Input::old('email')).'"': '' }} >
 @if($errors->has('email'))
 	
 	{{ $errors->first('email')}}
