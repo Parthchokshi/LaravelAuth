@@ -1,8 +1,5 @@
 @extends('layout.main')
 
-{{HTML::style('../css/foundation.css')}}
-{{HTML::style('../css/style.css')}}
-
 @section('title')
 Forgot Password
 @stop
@@ -21,7 +18,7 @@ Forgot Password
 
 @endif
 
-<button type="submit" class="btn btn-primary">Recover Account.</button>
+<button type="submit" class="button">Recover Account.</button>
 
 </div>
 
