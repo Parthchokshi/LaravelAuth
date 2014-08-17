@@ -2,22 +2,41 @@
 <html>
 <head>
 	<title>@yield('title')</title>
-<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {{ HTML::style('packages/bootstrap/css/bootstrap.min.css') }}
-    {{ HTML::style('css/style.css') }}
-</head>
-<body>
-<div class="notify">
-	@if(Session::has('notify'))
-	<p> {{ Session::get('notify') }} </p>
-	@endif
-</div>
+	
+	@include('layout.header')
 
-	<div class="navbar">
+</head>
+
+
+<body>
+
+	<div class="header">
+	
 	@include('layout.navigation')
+	
 	</div>
+
+
+	<div class="notify">
+	
+	@if(Session::has('notify'))
+	
+	<p> {{ Session::get('notify') }} </p>
+	
+	@endif
+	
+	</div>
+
+	
+	<div class="content">
+	
 	@yield('content')
+	
+	</div>
+
+
+	@include('layout.footer')
+
 
 </body>
 </html>
