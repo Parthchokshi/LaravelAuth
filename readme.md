@@ -29,7 +29,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 *********************Steps for getting started ***********************************
 **********************************************************************************
 
-After you get the laravel-auth folder in your location, follow these steps :
+After you get the LaravelAuth folder in your location, follow these steps :
 
 -Move the folder to some location, for instance D:/laravel-auth
 
