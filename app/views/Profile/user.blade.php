@@ -1,6 +1,4 @@
 @extends('layout.main')
-{{HTML::style('../css/foundation.css')}}
-{{HTML::style('../css/style.css')}}
 
 @section('title')
 User Profile
