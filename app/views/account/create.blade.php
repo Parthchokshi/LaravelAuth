@@ -1,5 +1,9 @@
 @extends('layout.main')
 
+{{HTML::style('../css/foundation.css')}}
+{{HTML::style('../css/style.css')}}
+
+
 @section('title')
 
 Create an account
@@ -47,7 +51,7 @@ Create an account
 
 	</div>
 
-		<input type="submit" value="Create an account." class="btn btn-large btn-primary" />	
+		<input type="submit" value="Create an account." class="button expand" />	
 
 		{{ Form::token() }}
 
