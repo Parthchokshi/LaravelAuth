@@ -149,7 +149,7 @@ class AccountController extends BaseController{
 				 	if($user->save())
 				 	{
 				 		return Redirect::route('home')
-				 				->with('notify','Congrats. Your account has been activated.');
+				 				->with('notify','Congrats. Your account has been activated. SignIn to continue.');
 				 	}
 
 				 }
