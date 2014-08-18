@@ -12,7 +12,7 @@ class HomeController extends BaseController {
 		// });
 
 
-		return View::make('home');
+		return View::make('layout.home');
 	}
 
 	
